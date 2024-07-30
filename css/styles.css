@@ -61,6 +61,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-navigation {
@@ -77,7 +79,6 @@ img {
 
 .header-list-item {
   padding: 24px 0;
-  position: relative;
 }
 
 .header-logo {
@@ -108,13 +109,19 @@ img {
   transition-delay: 0s;
 }
 
+.nav-item.main-item {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-list .nav-item:hover,
 .header-list .nav-item:focus,
 .header-list .nav-item:active {
   color: #404bbf;
 }
 
-.header-list-item:first-child::after {
+.header-list-item .nav-item.main-item::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -140,10 +147,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition-property: color;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info .contact-info-item:hover,
@@ -160,9 +164,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  max-width: 1440px;
   background-color: #2e2f42;
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .main .main-text {
@@ -192,10 +197,7 @@ img {
   border: none;
   padding: 16px 32px;
   min-width: 169px;
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main .main-button:hover,
