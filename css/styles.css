@@ -333,10 +333,6 @@ img {
   padding-bottom: 100px;
 }
 
-.container.footer-container {
-  margin-right: 120px;
-}
-
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -362,9 +358,7 @@ img {
   max-width: 264px;
 }
 
-.footer-info {
-  display: flex;
-  align-items: baseline;
+.footer-main-box {
   margin-right: 120px;
 }
 
@@ -375,6 +369,11 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+
+.container.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .team-socnetwork-item .team-socnetwork-link:hover,
